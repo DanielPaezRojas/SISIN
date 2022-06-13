@@ -1,0 +1,25 @@
+IPCOP (Other linux 32 bits)
+
+adaptadores: NAT y Red Interna
+Almacenamiento apunte IPCOP iso
+
+
+
+*CONFIGURACIÓN*
+
+teclado es ES no el otro
+
+INTERFAZ ROJA: apunta al exterior. poner DHCP. 
+Ir en red avanzadaas a direccion MAC para saber q tarjeta de red es.
+
+no poner nada en la configuracion DNS
+
+
+
+Las otras máquinas han de estar en red interna.
+Para comprobar si IPCOP está funcionando habria que mirar si la puerta de enlace y la ip está dentro del parámetro que le hemos dado a IPCOP. Si este está es que está funcionando.
+Por ej:
+si en el DHCP hemos puesto -->
+	* Direccion inicial: 192.168.1.1
+	* Direccion final: 192.168.1.100
+Las máquinas Debian y Windows Server deberán tener una IP dentro de este rango y se actualizarán según el parámetro de tiempo que le hayamos dado.
